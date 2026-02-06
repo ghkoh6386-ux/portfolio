@@ -1,0 +1,225 @@
+@charset "utf-8";
+h1 {
+    font-size: 74px;
+    font-weight: 400;
+}
+.exb {
+    position: relative;
+}
+.exb::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #000;
+    top: 66%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 69%;
+    height: 50px;
+}
+
+/* -----title-area---- */
+.title-area {
+    margin-top: 20px;
+}
+.title-area .inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.title-area .inner .title {
+    position: relative;
+}
+.title-area .inner h1::before {
+    position: absolute;
+    border-top: 1px solid #000;
+    width: 300px; height: 50px;
+    top: 50%; left: -123%;
+    content: '';
+}
+.title-area .inner ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.title-area .inner ul li span {
+    border-left: 1px solid #999999;
+    padding-left: 20px;
+}
+.title-area .inner ul li:first-child span {
+    border: none;
+}
+.title-area .inner ul img {
+    width: 18px;
+    vertical-align: -2px;
+}
+
+/* ---tab-menu--- */
+.tab-menu {
+    border-bottom: 1px solid #999999b2;
+    margin-bottom: 100px;
+}
+.tab-menu ul {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #999999;
+}
+.tab-menu ul li {
+    text-align: center;
+}
+.tab-menu ul li button {
+    display: inline-block;
+    padding: 20px 20px;
+    background: none;
+    cursor: pointer;
+    color: #999999;
+}
+.tab-menu ul .all {
+    position: relative;
+}
+.tab-menu ul .all button.on {
+    color: #000;
+}
+.tab-menu ul .all button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .all button.active::after {
+  width: 80%;
+}
+.tab-menu ul .art {
+    position: relative;
+}
+.tab-menu ul .art button.on {
+    color: #000;
+}
+.tab-menu ul .art button::after {
+   position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .art button.active::after {
+  width: 80%;
+}
+.tab-menu ul .museum {
+    position: relative;
+}
+.tab-menu ul .museum button.on {
+    color: #000;
+}
+.tab-menu ul .museum button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .museum button.active::after {
+  width: 80%;
+}
+.tab-menu ul .project {
+    position: relative;
+}
+.tab-menu ul .project button.on {
+    color: #000;
+}
+.tab-menu ul .project button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .project button.active::after {
+  width: 90%;
+}
+/* ---exhibition--- */
+.museum .inner > div {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 70px;
+}
+.museum .inner > div:last-child {
+    margin-bottom: 150px;
+}
+.museum .inner > div h3 {
+    display: inline-block;
+    background: #000;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.museum .inner > div h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.museum .inner > div span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-bottom: 70px;
+}
+.museum .inner .text-area img {
+    width: 40px;
+    vertical-align: -13px;
+}
+.museum .inner > div .img-area {
+    text-align: right;
+}
+.museum .inner > div .img-area img {
+    width: 88%;
+}
+.museum .inner > div .btn-area a {
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 20px;
+    padding: 20px 55px;
+}
+.museum .inner > div .btn-area .btn-white {
+    margin-right: 20px;
+}
+.museum .inner > div .btn-area .btn-white:hover {
+    background: #999999;
+}
+.museum .inner > div .btn-area .btn-black {
+    color: #fff;
+    background: #000
+}
+.museum .inner > div .btn-area .btn-black:hover {
+    background: #fff;
+    color: #000;
+}
+.museum .inner .img02 .img-area {
+    text-align: left;
+    margin-right: 60px;
+}
+.museum .inner .img02 .img-area img {
+    width: 120%;
+}
+.museum .inner .img03 .img-area img {
+    width: 100%;
+}
+.museum .inner .img01.hidden {
+    display: none;
+}
+.museum .inner .img02.hidden {
+    display: none;
+}
+.museum .inner .img03.hidden {
+    display: none;
+}

@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+h1 {
+    font-size: 74px;
+    font-weight: 400;
+}
+.event {
+    position: relative;
+}
+.event::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #000;
+    top: 66%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38%;
+    height: 50px;
+}
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* -----title-area---- */
+.title-area {
+    margin-top: 20px;
+}
+.title-area .inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.title-area .inner .title {
+    position: relative;
+}
+.title-area .inner h1::before {
+    position: absolute;
+    border-top: 1px solid #000;
+    width: 500px; height: 50px;
+    top: 50%; left: -280%;
+    content: '';
+}
+.title-area .inner ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.title-area .inner ul li span {
+    border-left: 1px solid #999999;
+    padding-left: 20px;
+}
+.title-area .inner ul li:first-child span {
+    border: none;
+}
+.title-area .inner ul img {
+    width: 18px;
+    vertical-align: -2px;
+}
+
+/* ---now-area--- */
+.now-area {
+    margin-bottom: 150px;
+}
+.now-area .now {
+    background: #6E02D1;
+    color: #fff;
+    height: 800px;
+}
+.now-area .now .inner {
+    position: relative;
+    height: 100%;
+}
+.now-area .now .inner .text-area {
+    position: absolute;
+    height: 100%;
+    top: 30%;
+}
+.now-area .now .inner .text-area span {
+    display: inline-block;
+    background-color: #fff;
+    color: rgba(82, 24, 174, 0.938);
+    font-size: 18px;
+    padding: 8px 15px;
+    margin-bottom: 30px;
+}
+.now-area .now .inner .text-area h1 {
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.now-area .now .inner .text-area p {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.now-area .now .inner .text-area strong {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.now-area .now .inner .text-area .btn {
+    font-size: 18px;
+    padding: 10px 50px;
+    border: 1px solid #fff;
+}
+/* ---tab-menu--- */
+.tab-menu {
+    border-bottom: 1px solid #999999b2;
+    margin-bottom: 100px;
+}
+.tab-menu ul {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: #999999;
+}
+.tab-menu ul li {
+    text-align: center;
+}
+.tab-menu ul li button {
+    display: inline-block;
+    padding: 20px 20px;
+    color: #999999;
+    cursor: pointer;
+}
+.tab-menu ul .all {
+    position: relative;
+}
+.tab-menu ul .all button.on {
+    color: #000;
+}
+.tab-menu ul .all button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .all button.active::after {
+  width: 80%;
+}
+.tab-menu ul .art {
+    position: relative;
+}
+.tab-menu ul .art button.on {
+    color: #000;
+}
+.tab-menu ul .art button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .art button.active::after {
+  width: 80%;
+}
+.tab-menu ul .museum {
+    position: relative;
+}
+.tab-menu ul .museum button.on {
+    color: #000;
+}
+.tab-menu ul .museum button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .museum button.active::after {
+  width: 80%;
+}
+.tab-menu ul .space {
+    position: relative;
+}
+.tab-menu ul .space button.on {
+    color: #000;
+}
+.tab-menu ul .space button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .space button.active::after {
+  width: 90%;
+}
+.tab-menu ul .project {
+    position: relative;
+}
+.tab-menu ul .project button.on {
+    color: #000;
+}
+.tab-menu ul .project button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .project button.active::after {
+  width: 90%;
+}
+/* contents */
+.contents .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.contents .inner .content {
+    height: 460px;
+    border: 1px solid #000;
+    margin-bottom: 80px;
+}
+.contents .inner .content img {
+    width: 100%;
+}
+.contents .inner .content .text-area {
+    padding: 30px;
+}
+.contents .inner .content .text-area span {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.contents .inner .content .text-area p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.content01.hidden {
+    display: none;
+}
+.content02.hidden {
+    display: none;
+}
+.content03.hidden {
+    display: none;
+}
+.content04.hidden {
+    display: none;
+}
+.content05.hidden {
+    display: none;
+}
+.content06.hidden {
+    display: none;
+}
+.content07.hidden {
+    display: none;
+}
+.content08.hidden {
+    display: none;
+}
+.content09.hidden {
+    display: none;
+}
+.content10.hidden {
+    display: none;
+}
+.content11.hidden {
+    display: none;
+}
+.content12.hidden {
+    display: none;
+}
+.content13.hidden {
+    display: none;
+}
+.content14.hidden {
+    display: none;
+}
+.content15.hidden {
+    display: none;
+}
+.content16.hidden {
+    display: none;
+}
+.content17.hidden {
+    display: none;
+}
+.content18.hidden {
+    display: none;
+}
+.content {
+  display: none;
+}
+.content.is-visible {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+/* more btn */
+.more .inner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.more .inner button {
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 18px 50px;
+    cursor: pointer;
+}
+.more .inner button span {
+    display: inline-block;
+    margin-right: 10px;
+}
+.more .inner button i {
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: -1px;
+}

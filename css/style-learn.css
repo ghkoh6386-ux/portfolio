@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+h1 {
+    font-size: 74px;
+    font-weight: 400;
+}
+.learn {
+    position: relative;
+}
+.learn::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #000;
+    top: 66%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50px;
+}
+
+/* -----title-area---- */
+.title-area {
+    margin-top: 20px;
+}
+.title-area .inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.title-area .inner .title {
+    position: relative;
+}
+.title-area .inner h1::before {
+    position: absolute;
+    border-top: 1px solid #000;
+    width: 500px; height: 50px;
+    top: 50%; left: -280%;
+    content: '';
+}
+.title-area .inner ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.title-area .inner ul li span {
+    border-left: 1px solid #999999;
+    padding-left: 20px;
+}
+.title-area .inner ul li:first-child span {
+    border: none;
+}
+.title-area .inner ul img {
+    width: 18px;
+    vertical-align: -2px;
+}
+
+/* ---tab-menu--- */
+.tab-menu {
+    border-bottom: 1px solid #999999b2;
+    margin-bottom: 100px;
+}
+.tab-menu ul {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #999999;
+}
+.tab-menu ul li {
+    text-align: center;
+}
+.tab-menu ul li button {
+    display: inline-block;
+    padding: 20px 20px;
+    background: none;
+    cursor: pointer;
+    color: #999999;
+}
+.tab-menu ul .children {
+    position: relative;
+}
+.tab-menu ul .children button.on {
+    color: #000;
+}
+.tab-menu ul .children button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .children button.active::after {
+  width: 80%;
+}
+.tab-menu ul .student {
+    position: relative;
+}
+.tab-menu ul .student button.on {
+    color: #000;
+}
+.tab-menu ul .student button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .student button.active::after {
+  width: 80%;
+}
+.tab-menu ul .professor {
+    position: relative;
+}
+.tab-menu ul .professor button.on {
+    color: #000;
+}
+.tab-menu ul .professor button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .professor button.active::after {
+  width: 80%;
+}
+.tab-menu ul .explain {
+    position: relative;
+}
+.tab-menu ul .explain button.on {
+    color: #000;
+}
+.tab-menu ul .explain button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul .explain button.active::after {
+  width: 90%;
+}
+/* sub-title */
+.sub-title {
+    margin-bottom: 100px;
+}
+.sub-title h1 {
+    margin-bottom: 20px;
+}
+.sub-title .sub-text {
+    display: flex;
+    justify-content: space-between;
+    color: #999999;
+}
+.sub-title .sub-text strong {
+    color: #000;
+}
+.sub-title .sub-text ul {
+    display: flex;
+}
+.sub-title .sub-text ul li {
+    padding: 0 10px;
+}
+.sub-title .sub-text button {
+    cursor: pointer;
+    color: #999999;
+}
+.sub-title .sub-text button.on {
+    color: #000;
+}
+.sub-title .sub-text ul li + li {
+    border-left: 1px solid #d4d4d4;
+}
+
+/* ---edu--- */
+.edu {
+    margin-bottom: 150px;
+}
+.edu .inner > div + div {
+    margin-top: 100px;
+}
+.edu .inner > div a {
+    display: flex;
+    flex: 1;
+    gap: 40px;
+} 
+.edu .inner > div a .img-area {
+    max-width: 580px;
+}
+.edu .inner > div a img {
+    max-width: 100%;
+}
+.edu .inner > div .text-area span {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+.edu .inner > div .text-area h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.edu .inner > div .text-area p {
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.edu .inner > div .text-area dl {
+    display: flex;
+    gap: 30px;
+}
+.edu .inner > div .text-area dl + dl {
+    margin-top: 10px;
+}
+.edu .inner > div .text-area dl dt {
+    width: 80px;
+}
+.edu .inner .edu04 a .img-area {
+    width: 900px;
+}
+.edu .inner .edu05 a .img-area {
+    width: 900px;
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-event.css">
+    <link rel="stylesheet" href="css/header_top.css">
+    <link rel="stylesheet" href="css/style-event-t.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/style-event-m.css" media="screen and (max-width: 600px)">
+
+    <script src="js/event.js" defer></script>
+    <script src="js/header.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div class="main-area">
+            <header>
+                <div class="header-top">
+                    <ul class="menu-top">
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="#">BECOME A MEMBER</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">대림문화재단</a></li>
+                    </ul>
+                </div>
+                <div class="header-bottom">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                    </div>
+                    <ul class="menu-bottom">
+                        <li>
+                            <a href="index_visit.html" class="visit">VISIT</a>
+                        </li>
+                        <li>
+                            <a href="index_exhibition.html" class="exb">EXHIBITION</a>
+                        </li>
+                        <li>
+                            <a href="index_learn.html" class="learn">LEARN</a>
+                        </li>
+                        <li>
+                            <a href="index_event.html" class="event">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="index_ticket.html" class="ticket">TICKET</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                    </ul>
+                    <a href="#"><img class="calendar" src="img/calendar-black.png" alt=""></a>
+                </div>
+                <div class="header-change">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                    </div>
+                    <ul class="menu-bottom">
+                        <li>
+                            <a href="index_visit.html" class="visit">VISIT</a>
+                        </li>
+                        <li>
+                            <a href="index_exhibition.html" class="exb">EXHIBITION</a>
+                        </li>
+                        <li>
+                            <a href="index_learn.html" class="learn">LEARN</a>
+                        </li>
+                        <li>
+                            <a href="index_event.html" class="event">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="index_ticket.html" class="ticket">TICKET</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="calender-area">
+                        <img class="calendar" src="img/calendar-black.png" alt="">
+                    </a>
+                    <button class="menuBtn" type="button" onclick="showMenu">
+                        <img class="menu" src="img/menu.png" alt="">
+                    </button>
+                </div>
+                <div class="gnb-area">
+                    <div class="list-area">
+                        <div class="list">
+                            <ul class="introduce">
+                                <a href="index_visit.html">
+                                    <li>미술관 소개</li>
+                                </a>
+                                <a href="">
+                                    <li>관람 안내</li>
+                                </a>
+                                <a href="">
+                                    <li>오시는 길</li>
+                                </a>
+                            </ul>
+                            <ul class="museum">
+                                <li><img src="img/gnb-logo01.png" alt=""></li>
+                                <li><img src="img/gnb-img01.png" alt=""></li>
+                                <li><strong>전시 중</strong>
+                                    <p>
+                                        서울특별시 성동구 왕십리로 83-21, <br>
+                                        디뮤지엄
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="museum">
+                                <li><img src="img/gnb-logo02.png" alt=""></li>
+                                <li><img src="img/gnb-img02.png" alt=""></li>
+                                <li><strong>전시 중</strong>
+                                    <p>
+                                        서울특별시 종로구 자하문로 4길 21, <br>
+                                        대림미술관
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exhibition-area">
+                        <div class="exhibition-list">
+                            <ul class="exhibition">
+                                <li>
+                                    <a href="index_exhibition.html">현재 전시</a>
+                                </li>
+                                <li>
+                                    <a href="">지난 전시</a>
+                                </li>
+                                <li>
+                                    <a href="">다음 전시</a>
+                                </li>
+                            </ul>
+                            <ul class="art">
+                                <li><img class="logo-s-1" src="img/gnb-logo02.png" alt=""><strong>현재 전시</strong>
+                                </li>
+                                <li><img class="art-img img01" src="img/ticket02.jpg" alt=""></li>
+                                <li></li>
+                            </ul>
+                            <ul class="art">
+                                <li><img class="logo-s-2" src="img/gnb-logo01.png" alt=""><strong>지난 전시</strong>
+                                </li>
+                                <li><img class="art-img img02" src="img/ticket03.jpg" alt=""></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <!-- title-area -->
+        <div class="title-area">
+            <div class="inner">
+                <div class="title">
+                    <h1>이벤트</h1>
+                </div>
+                <ul>
+                    <li><span><a href="index.html"><img src="img/house-blank.png" alt=""></a></span></li>
+                    <li><span>EVENT</span></li>
+                    <li><span>이벤트</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- NOW -->
+        <div class="now-area">
+            <div class="inner">
+                <h2>NOW</h2>
+            </div>
+            <div class="now">
+                <div class="inner">
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <h1>D SPOT at SEOUNG SU</h1>
+                        <p>2025.08.06 ~ 2026.02.22</p>
+                        <strong>디뮤지엄</strong>
+                        <div class="btn-area">
+                            <a href="" class="btn">
+                                자세히 보기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- past -->
+        <div class="past">
+            <div class="inner">
+                <h2>PAST</h2>
+            </div>
+        </div>
+        <!-- tab-menu -->
+        <div class="tab-menu">
+            <div class="inner">
+                <ul>
+                    <li class="all">
+                        <button class="tab-btn" type="button" onclick="showAll()">전체</button>
+                    </li>
+                    <li class="art">
+                        <button class="tab-btn" type="button" onclick="showArt()">대림미술관</button>
+                    </li>
+                    <li class="museum">
+                        <button class="tab-btn" type="button" onclick="showMuseum()">디뮤지엄</button>
+                    </li>
+                    <li class="space">
+                        <button class="tab-btn" type="button" onclick="showSpace()">구슬모아당구장</button>
+                    </li>
+                    <li class="project">
+                        <button class="tab-btn" type="button" onclick="showProject()">D PUBLIC PROJECT</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- contents -->
+        <div class="contents">
+            <div class="inner">
+                <div class="content content01 art">
+                    <div class="img-area">
+                        <img src="img/content01.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>대림미술관</span>
+                        <p>RED HORSE FANSTA</p>
+                    </div>
+                </div>
+                <div class="content content02 art">
+                    <div class="img-area">
+                        <img src="img/content02.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>대림미술관</span>
+                        <p>니팅 소셜 클럽 width 댄싱그랜마 (12월)</p>
+                    </div>
+                </div>
+                <div class="content content03 art">
+                    <div class="img-area">
+                        <img src="img/content03.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>대림미술관</span>
+                        <p>Meet Up With 포타토이</p>
+                    </div>
+                </div>
+                <div class="content content04 art">
+                    <div class="img-area">
+                        <img src="img/content04.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>대림미술관</span>
+                        <p>니팅 소셜 클럽 width 댄싱그랜마 (11월)</p>
+                    </div>
+                </div>
+                <div class="content content05 art">
+                    <div class="img-area">
+                        <img src="img/content05.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>대림미술관</span>
+                        <p>Meet Up With 밀레나</p>
+                    </div>
+                </div>
+                <div class="content content06 museum">
+                    <div class="img-area">
+                        <img src="img/content06.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <p>미술관 사람들</p>
+                    </div>
+                </div>
+                <div class="content content07 museum">
+                    <div class="img-area">
+                        <img src="img/content07.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <p>퇴근길 미술관</p>
+                    </div>
+                </div>
+                <div class="content content08 museum">
+                    <div class="img-area">
+                        <img src="img/content08.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <p>[취향의 밤] 싱어송라이터 김제형</p>
+                    </div>
+                </div>
+                <div class="content content09 museum">
+                    <div class="img-area">
+                        <img src="img/content09.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <p>[취향의 밤] 고고학 하범석</p>
+                    </div>
+                </div>
+                <div class="content content10 museum">
+                    <div class="img-area">
+                        <img src="img/content10.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <p>취향의 밤 width 하우스 어브 핀 율 서울</p>
+                    </div>
+                </div>
+                <div class="content content11 space">
+                    <div class="img-area">
+                        <img src="img/content11.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>구슬모아당구장</span>
+                        <p>[취향의 밤] 잭킹콩 심강훈&이범호</p>
+                    </div>
+                </div>
+                <div class="content content12 space">
+                    <div class="img-area">
+                        <img src="img/content12.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>구슬모아당구장</span>
+                        <p>[취향의 밤] 시각예술가 이은</p>
+                    </div>
+                </div>
+                <div class="content content13 space">
+                    <div class="img-area">
+                        <img src="img/content13.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>구슬모아당구장</span>
+                        <p>[취향의 밤] 시각예술가 노상호</p>
+                    </div>
+                </div>
+                <div class="content content14 space">
+                    <div class="img-area">
+                        <img src="img/content14.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>구슬모아당구장</span>
+                        <p>[취향의 밤] 아트토이 컬렉터 고기환</p>
+                    </div>
+                </div>
+                <div class="content content15 project">
+                    <div class="img-area">
+                        <img src="img/content15.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>D PUBLIC PROJECT</span>
+                        <p>[취향의 밤] off the menu</p>
+                    </div>
+                </div>
+                <div class="content content16 project">
+                    <div class="img-area">
+                        <img src="img/content16.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>D PUBLIC PROJECT</span>
+                        <p>전시연장기념 특별개관: APRIL FREE DAY</p>
+                    </div>
+                </div>
+                <div class="content content17 project">
+                    <div class="img-area">
+                        <img src="img/content17.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>D PUBLIC PROJECT</span>
+                        <p>[취향의 밤] 진수영</p>
+                    </div>
+                </div>
+                <div class="content content18 project">
+                    <div class="img-area">
+                        <img src="img/content18.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>D PUBLIC PROJECT</span>
+                        <p>[취향의 밤] 민수</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="more">
+            <div class="inner">
+                <button class="btn-more" type="button" onclick="showMore()"><span>더보기</span><i
+                        class="ri-arrow-down-s-line"></i></button>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+                <div class="top">
+                    <ul class="top-ul">
+                        <li class="logo">
+                            DAELIM <br>
+                            CULTURAL <br>
+                            FOUNDATION
+                        </li>
+                        <li class="museum1">
+                            <span class="D">D</span><span>MUSEUM</span>
+                            <p>
+                                서울특별시 성동구 왕십리로 <br>
+                                83-21. 디뮤지엄 <br>
+                                T. 02.6233.7200
+                            </p>
+                        </li>
+                        <li class="museum2">
+                            <span>DAELIM MUSEUM</span>
+                            <p>
+                                서울특별시 종로구 자하문로4길<br> 21, 대림미술관 <br>
+                                T. 02.720.0667 <br>
+                                F. 02.720.0665
+                            </p>
+                        </li>
+                        <li class="space-area">
+                            <img class="space" src="img/space.png">
+                            <div class="text">
+                                <p>구슬모아당구장</p>
+                                <p class="PROJECT">D PROJECT SPACE</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-area">
+                                <a href="#"><img class="insta" src="img/instagram.png" alt=""></a>
+                                <a href="#"><img class="youtube" src="img/youtube.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li><a href="#">채용<img class="share" src="img/share.png" alt=""></a></li>
+                                <li><a href="#">대관·제휴문의</a></li>
+                                <li class="site"><a href="#">SITEMAP</a></li>
+                                <li><a href="#">대림문화재단소개<img class="share" src="img/share.png" alt=""></a></li>
+                                <li><a href="#">문화체육관광부<img class="share" src="img/share.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <a href=""><strong>개인정보 처리방침</strong></a>
+                        <a href="">이용약관</a>
+                        <a href="">영상정보처리기기 운영·관리방침</a>
+                    </div>
+                    <div>
+                        <span><strong>(재)대림문화재단</strong></span><span>대표자: 이해욱</span>
+                        <span>서울특별시 종로구 자하문로4길 21(통의동 35-1)</span> <span>사업자등록번호: 305-82-09028</span>
+                        <span>통신판매업신고번호: 2020-서울종로-0013</span>
+                        <span>info@daelimmuseum.org</span>
+                    </div>
+                    <div>
+                        © 2022 BY <strong>DAELIM CULTURAL FOUNDATION</strong> ALL RIGHT RESERVED.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

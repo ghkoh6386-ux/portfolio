@@ -1,0 +1,255 @@
+@charset "utf-8";
+h1 {
+    font-size: 74px;
+    font-weight: 400;
+}
+.ticket {
+    position: relative;
+}
+.ticket::after {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #000;
+    top: 66%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42%;
+    height: 50px;
+}
+
+/* top-menu */
+.top-menu {
+    padding-block: 60px;
+}
+.top-menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.top-menu ul li {
+    border: 1px solid #999999;
+    padding-block: 15px;
+}
+.top-menu ul li:first-child {
+    background: #000;
+    color: #fff;
+}
+.top-menu ul li + li {
+    margin-left: -1px;
+}
+/* ---tab-menu--- */
+.tab-menu ul {
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #999999;
+    border-bottom: 1px solid #999999b2;
+    margin-bottom: 15px;
+}
+.tab-menu ul li {
+    text-align: center;
+}
+.tab-menu ul li button {
+    position: relative;
+    display: inline-block;
+    padding: 20px 20px;
+    cursor: pointer;
+    color: #999999;
+}
+.tab-menu ul li button.on {
+    color: #000;
+}
+.tab-menu ul li button::after {
+    position: absolute;
+    bottom: -1px; left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    width: 0%; height: 1px;
+    content: '';
+}
+.tab-menu ul li button.on::after {
+    width: 80%;
+}
+/* sub-tab-menu */
+.sub-tab-menu {
+    display: none;
+}
+.sub-tab-menu ul {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    padding-bottom: 50px;
+}
+.sub-tab-menu ul li + li {
+    border-left: 1px solid #d4d4d4;
+    padding-left: 15px;
+}
+.sub-tab-menu ul li button {
+    cursor: pointer;
+    color: #999999;
+}
+.sub-tab-menu ul li button.on {
+    color: #000;
+}
+/* sub-title */
+.sub-title .sub-text {
+    display: flex;
+    justify-content: space-between;
+}
+.sub-title .sub-text button {
+    color: #999999;
+    cursor: pointer;
+}
+.sub-title .sub-text button.on {
+    color: #000;
+}
+.sub-title .sub-text strong {
+    color: #000;
+}
+.sub-title .sub-text ul {
+    display: flex;
+}
+.sub-title .sub-text ul li {
+    padding: 0 10px;
+}
+.sub-title .sub-text ul li:first-child {
+    color: #000;
+}
+.sub-title .sub-text ul li + li {
+    border-left: 1px solid #d4d4d4;
+}
+/* contents */ 
+#wrap .contents {
+    margin-bottom: 150px;
+}
+.contents .no-ticket {
+    display: flex;
+    justify-content: center;
+}
+.contents .no-ticket h2 {
+    height: 500px;
+    line-height: 500px;
+    color: #999999;
+    font-size: 28px;
+    font-weight: 500;
+    display: none;
+}
+.contents .no-ticket h2.on {
+    display: block;
+}
+.contents .inner > div {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.contents .inner > div img {
+    max-width: 650px
+}
+.contents .inner > div .text-area {
+    position: relative;
+}
+.contents .inner > div .text-area span {
+    display: inline-block;
+    font-size: 18px;
+    background: #000;
+    color: #fff;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+}
+.contents .inner > div .text-area h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.contents .inner > div .text-area p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.contents .inner > div .text-area .btn-area {
+    position: absolute;
+    bottom: 0;
+}
+.contents .inner > div .text-area .btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 20px 65px;
+    border: 1px solid #000;
+}
+.contents .inner > div .text-area .btn:hover {
+    background: #fff;
+    color: #000;
+}
+/* ---edu--- */
+.contents .inner > .edu {
+    display: none;
+}
+.contents .inner > .edu a {
+    display: flex;
+    flex: 1;
+    gap: 40px;
+} 
+.contents .inner > .edu a .img-area {
+    max-width: 580px;
+}
+.contents .inner > .edu a img {
+    max-width: 100%;
+}
+.contents .inner > .edu .text-area span {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+.contents .inner > .edu .text-area h2 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.contents .inner > .edu .text-area p {
+    color: #999999;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contents .inner > .edu .text-area dl {
+    display: flex;
+    gap: 30px;
+}
+.contents .inner > .edu .text-area dl + dl {
+    margin-top: 10px;
+}
+.contents .inner > .edu .text-area dl dt {
+    width: 80px;
+}
+.contents .inner .content06 a .img-area {
+    width: 900px;
+}
+.contents .inner .content07 a .img-area {
+    width: 900px;
+}
+/* more btn */
+.more {
+    display: none;
+    margin-bottom: 150px;
+}
+.more .inner {
+    display: flex;
+    justify-content: center;
+}
+.more .inner button {
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 18px 50px;
+    cursor: pointer;
+}
+.more .inner button span {
+    display: inline-block;
+    margin-right: 10px;
+}
+.more .inner button i {
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: -1px;
+}

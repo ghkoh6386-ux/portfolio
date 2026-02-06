@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEALIM MUSEUM</title>
+
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-t.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/style-m.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="js/header.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div class="main-area">
+            <header>
+                <div class="header-top">
+                    <ul class="menu-top">
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="#">BECOME A MEMBER</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">대림문화재단</a></li>
+                    </ul>
+                </div>
+                <div class="header-bottom">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/main-logo-white.png" alt=""></a>
+                    </div>
+                    <ul class="menu-bottom">
+                        <li>
+                            <a href="index_visit.html" class="visit">VISIT</a>
+                        </li>
+                        <li>
+                            <a href="index_exhibition.html" class="exb">EXHIBITION</a>
+                        </li>
+                        <li>
+                            <a href="index_learn.html" class="learn">LEARN</a>
+                        </li>
+                        <li>
+                            <a href="index_event.html" class="event">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="index_ticket.html" class="ticket">TICKET</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                    </ul>
+                    <a href="#"><img class="calendar" src="img/calendar-white.png" alt=""></a>
+                </div>
+                <div class="header-change">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                    </div>
+                    <ul class="menu-bottom">
+                        <li>
+                            <a href="index_visit.html" class="visit">VISIT</a>
+                        </li>
+                        <li>
+                            <a href="index_exhibition.html" class="exb">EXHIBITION</a>
+                        </li>
+                        <li>
+                            <a href="index_learn.html" class="learn">LEARN</a>
+                        </li>
+                        <li>
+                            <a href="index_event.html" class="event">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="index_ticket.html" class="ticket">TICKET</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="calender-area">
+                        <img class="calendar" src="img/calendar-black.png" alt="">
+                    </a>
+                    <button class="menuBtn" type="button" onclick="showMenu">
+                        <img class="menu" src="img/menu.png" alt="">
+                    </button>
+                </div>
+                <div class="gnb-area">
+                    <div class="list-area">
+                        <div class="list">
+                            <ul class="introduce">
+                                <a href="index_visit.html">
+                                    <li>미술관 소개</li>
+                                </a>
+                                <a href="">
+                                    <li>관람 안내</li>
+                                </a>
+                                <a href="">
+                                    <li>오시는 길</li>
+                                </a>
+                            </ul>
+                            <ul class="museum">
+                                <li><img src="img/gnb-logo01.png" alt=""></li>
+                                <li><img src="img/gnb-img01.png" alt=""></li>
+                                <li><strong>전시 중</strong>
+                                    <p>
+                                        서울특별시 성동구 왕십리로 83-21, <br>
+                                        디뮤지엄
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="museum">
+                                <li><img src="img/gnb-logo02.png" alt=""></li>
+                                <li><img src="img/gnb-img02.png" alt=""></li>
+                                <li><strong>전시 중</strong>
+                                    <p>
+                                        서울특별시 종로구 자하문로 4길 21, <br>
+                                        대림미술관
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exhibition-area">
+                        <div class="exhibition-list">
+                            <ul class="exhibition">
+                                <li>
+                                    <a href="index_exhibition.html">현재 전시</a>
+                                </li>
+                                <li>
+                                    <a href="">지난 전시</a>
+                                </li>
+                                <li>
+                                    <a href="">다음 전시</a>
+                                </li>
+                            </ul>
+                            <ul class="art">
+                                <li><img class="logo-s-1" src="img/gnb-logo02.png" alt=""><strong>현재 전시</strong>
+                                </li>
+                                <li><img class="art-img img01" src="img/ticket02.jpg" alt=""></li>
+                                <li></li>
+                            </ul>
+                            <ul class="art">
+                                <li><img class="logo-s-2" src="img/gnb-logo01.png" alt=""><strong>지난 전시</strong>
+                                </li>
+                                <li><img class="art-img img02" src="img/ticket03.jpg" alt=""></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- main -->
+            <!-- Swiper -->
+            <div class="swiper main-img">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg1">
+                        <a href="" class="img-bg">
+                            <img src="img/main-img.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg2">
+                        <a href="" class="movie-bg">
+                            <video muted autoplay loop>
+                                <source src="img/title-DMU.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-area">
+                <div class="inner">
+                    <ul>
+                        <li><img class="clock" src="img/clock-three.png" alt=""> 오늘 운영시간</li>
+                        <li>대림미술관<strong>11:00 ~ 18:00</strong></li>
+                        <li>디뮤지엄<strong>11:00 ~ 18:00</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- slide -->
+        <div class="slide">
+            <div class="inner">
+                <h1 class="what">WHAT'S ON</h1>
+            </div>
+            <div class="slide-area">
+                <div class="black">
+                    <div class="text">
+                        <span>교육</span>
+                        <h2 class="title">키즈워크룸 : 컬렉터의 집 (개인)</h2>
+                        <p class="date">2025.06.28 ~ 2026.02.22</p>
+                        <p>디뮤지엄</p>
+                        <div class="btn-area">
+                            <a href="">더보기</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper sub-image">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/slide-img01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide-img02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide-img03.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide-img04.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide-img05.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide-img06.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/slide-img07.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+                <div class="top">
+                    <ul class="top-ul">
+                        <li class="logo">
+                            DAELIM <br>
+                            CULTURAL <br>
+                            FOUNDATION
+                        </li>
+                        <li class="museum1">
+                            <span class="D">D</span><span>MUSEUM</span>
+                            <p>
+                                서울특별시 성동구 왕십리로 <br>
+                                83-21. 디뮤지엄 <br>
+                                T. 02.6233.7200
+                            </p>
+                        </li>
+                        <li class="museum2">
+                            <span>DAELIM MUSEUM</span>
+                            <p>
+                                서울특별시 종로구 자하문로4길<br> 21, 대림미술관 <br>
+                                T. 02.720.0667 <br>
+                                F. 02.720.0665
+                            </p>
+                        </li>
+                        <li class="space-area">
+                            <img class="space" src="img/space.png">
+                            <div class="text">
+                                <p>구슬모아당구장</p>
+                                <p class="PROJECT">D PROJECT SPACE</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-area">
+                                <a href="#"><img class="insta" src="img/instagram.png" alt=""></a>
+                                <a href="#"><img class="youtube" src="img/youtube.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li><a href="#">채용<img class="share" src="img/share.png" alt=""></a></li>
+                                <li><a href="#">대관·제휴문의</a></li>
+                                <li class="site"><a href="#">SITEMAP</a></li>
+                                <li><a href="#">대림문화재단소개<img class="share" src="img/share.png" alt=""></a></li>
+                                <li><a href="#">문화체육관광부<img class="share" src="img/share.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <a href=""><strong>개인정보 처리방침</strong></a>
+                        <a href="">이용약관</a>
+                        <a href="">영상정보처리기기 운영·관리방침</a>
+                    </div>
+                    <div>
+                        <span><strong>(재)대림문화재단</strong></span><span>대표자: 이해욱</span>
+                        <span>서울특별시 종로구 자하문로4길 21(통의동 35-1)</span> <span>사업자등록번호: 305-82-09028</span>
+                        <span>통신판매업신고번호: 2020-서울종로-0013</span>
+                        <span>info@daelimmuseum.org</span>
+                    </div>
+                    <div>
+                        © 2022 BY <strong>DAELIM CULTURAL FOUNDATION</strong> ALL RIGHT RESERVED.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".main-img", {});
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".sub-image", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script>
+        const title = document.querySelector('.title')
+        const date = document.querySelector('.date')
+        const slide = document.querySelectorAll('.sub-image .swiper-slide')
+
+        if (slide[0]) {
+            title.textContent = '키즈워크룸 : 컬렉터의 집 (개인)'
+            date.textContent = '2025.06.28 ~ 2026.02.22'
+        } else if (slide[1]) {
+            title.textContent = '취향을 담아요! 해피픽백'
+            date.textContent = '2025.12.06 ~ 2026.02.22'
+        }
+    </script>
+</body>
+
+</html>

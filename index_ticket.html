@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket</title>
+
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-ticket.css">
+    <link rel="stylesheet" href="css/header_top.css">
+    <link rel="stylesheet" href="css/style-ticket-t.css" media="screen and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/style-ticket-m.css" media="screen and (max-width: 600px)">
+
+    <script src="js/ticket.js" defer></script>
+    <script src="js/header.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div class="main-area">
+            <header>
+                <div class="header-top">
+                    <ul class="menu-top">
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="#">BECOME A MEMBER</a></li>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">대림문화재단</a></li>
+                    </ul>
+                </div>
+                <div class="header-bottom">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                    </div>
+                    <ul class="menu-bottom">
+                        <li>
+                            <a href="index_visit.html" class="visit">VISIT</a>
+                        </li>
+                        <li>
+                            <a href="index_exhibition.html" class="exb">EXHIBITION</a>
+                        </li>
+                        <li>
+                            <a href="index_learn.html" class="learn">LEARN</a>
+                        </li>
+                        <li>
+                            <a href="index_event.html" class="event">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="index_ticket.html" class="ticket">TICKET</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                    </ul>
+                    <a href="#"><img class="calendar" src="img/calendar-black.png" alt=""></a>
+                </div>
+                <div class="header-change">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                    </div>
+                    <ul class="menu-bottom">
+                        <li>
+                            <a href="index_visit.html" class="visit">VISIT</a>
+                        </li>
+                        <li>
+                            <a href="index_exhibition.html" class="exb">EXHIBITION</a>
+                        </li>
+                        <li>
+                            <a href="index_learn.html" class="learn">LEARN</a>
+                        </li>
+                        <li>
+                            <a href="index_event.html" class="event">EVENT</a>
+                        </li>
+                        <li>
+                            <a href="index_ticket.html" class="ticket">TICKET</a>
+                        </li>
+                        <li>
+                            <a href="#">SHOP</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="calender-area">
+                        <img class="calendar" src="img/calendar-black.png" alt="">
+                    </a>
+                    <button class="menuBtn" type="button" onclick="showMenu">
+                        <img class="menu" src="img/menu.png" alt="">
+                    </button>
+                </div>
+                <div class="gnb-area">
+                    <div class="list-area">
+                        <div class="list">
+                            <ul class="introduce">
+                                <a href="index_visit.html">
+                                    <li>미술관 소개</li>
+                                </a>
+                                <a href="">
+                                    <li>관람 안내</li>
+                                </a>
+                                <a href="">
+                                    <li>오시는 길</li>
+                                </a>
+                            </ul>
+                            <ul class="museum">
+                                <li><img src="img/gnb-logo01.png" alt=""></li>
+                                <li><img src="img/gnb-img01.png" alt=""></li>
+                                <li><strong>전시 중</strong>
+                                    <p>
+                                        서울특별시 성동구 왕십리로 83-21, <br>
+                                        디뮤지엄
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="museum">
+                                <li><img src="img/gnb-logo02.png" alt=""></li>
+                                <li><img src="img/gnb-img02.png" alt=""></li>
+                                <li><strong>전시 중</strong>
+                                    <p>
+                                        서울특별시 종로구 자하문로 4길 21, <br>
+                                        대림미술관
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="exhibition-area">
+                        <div class="exhibition-list">
+                            <ul class="exhibition">
+                                <li>
+                                    <a href="index_exhibition.html">현재 전시</a>
+                                </li>
+                                <li>
+                                    <a href="">지난 전시</a>
+                                </li>
+                                <li>
+                                    <a href="">다음 전시</a>
+                                </li>
+                            </ul>
+                            <ul class="art">
+                                <li><img class="logo-s-1" src="img/gnb-logo02.png" alt=""><strong>현재 전시</strong>
+                                </li>
+                                <li><img class="art-img img01" src="img/ticket02.jpg" alt=""></li>
+                                <li></li>
+                            </ul>
+                            <ul class="art">
+                                <li><img class="logo-s-2" src="img/gnb-logo01.png" alt=""><strong>지난 전시</strong>
+                                </li>
+                                <li><img class="art-img img02" src="img/ticket03.jpg" alt=""></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        <!-- top-menu -->
+        <div class="top-menu">
+            <div class="inner">
+                <ul>
+                    <li>01. 티켓 선택</li>
+                    <li>02. 관람일/인원 선택</li>
+                    <li>03. 결제</li>
+                </ul>
+            </div>
+        </div>
+        <!-- tab-menu -->
+        <div class="tab-menu">
+            <div class="inner">
+                <ul>
+                    <li class="exivi">
+                        <button class="tab-btn" type="button" onclick="showExhibition()">EXHIBITION</button>
+                    </li>
+                    <li class="learn">
+                        <button class="tab-btn" type="button" onclick="showLearn()">LEARN</button>
+                    </li>
+                    <li class="event">
+                        <button class="tab-btn" type="button" onclick="showEvent()">EVENT</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-tab-menu">
+            <div class="inner">
+                <ul>
+                    <li class="all">
+                        <button class="sub-tab-btn" type="button" onclick="showAll()">전체</button>
+                    </li>
+                    <li class="children">
+                        <button class="sub-tab-btn" type="button" onclick="showChildren()">어린이</button>
+                    </li>
+                    <li class="student">
+                        <button class="sub-tab-btn" type="button" onclick="showStudent()">청소년</button>
+                    </li>
+                    <li class="professor">
+                        <button class="sub-tab-btn" type="button" onclick="showProfessor()">교사</button>
+                    </li>
+                    <li class="explain">
+                        <button class="sub-tab-btn" type="button" onclick="showExplain()">전시해설</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- sub-title -->
+        <div class="sub-title">
+            <div class="inner">
+                <div class="sub-text">
+                    <div class="all">
+                        <span>총 <strong>2</strong>건</span>
+                    </div>
+                    <ul>
+                        <li class="new">
+                            <button type="button" onclick="showNew()">최신순</button>
+                        </li>
+                        <li class="old">
+                            <button type="button" onclick="showOld()">오래된순</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="inner">
+                <div class="no-ticket">
+                    <h2>현재 예매 가능한 티켓이 없습니다.</h2>
+                </div>
+                <div class="content01" data-date="20251207">
+                    <div class="img-area">
+                        <img src="img/ticket01.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>디뮤지엄</span>
+                        <h2>취향가옥 2: Art in Life, Life in Art 2</h2>
+                        <p>2025.06.28 ~ 2026.02.22</p>
+                        <div class="btn-area">
+                            <a href="" class="btn">
+                                예매하기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content02" data-date="20251206">
+                    <div class="img-area">
+                        <img src="img/ticket02.jpg" alt="">
+                    </div>
+                    <div class="text-area">
+                        <span>대림뮤지엄</span>
+                        <h2>페트라 콜린스: fangirl</h2>
+                        <p>2025.08.29 ~ 2026.02.15</p>
+                        <div class="btn-area">
+                            <a href="" class="btn">
+                                예매하기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content03 edu" data-category="children" data-date="20251206" data-recommend="5">
+                    <a href="">
+                        <div class="img-area">
+                            <img src="img/learn01.jpg" alt="">
+                        </div>
+                        <div class="text-area">
+                            <div>
+                                <span>1회성 교육</span>
+                                <span>디뮤지엄</span>
+                                <span>전시연계</span>
+                            </div>
+                            <h2>취향을 담아요! 해피픽백</h2>
+                            <p>
+                                어린이와 가족이 함께 좋아하는 모양과 색으로 자신의 취향을 표현해 보는 예술 체험 프로그램
+                            </p>
+                            <dl>
+                                <dt>교육진행</dt>
+                                <dd>
+                                    2025.12.06 ~ 2026.02.22
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>
+                                    디뮤지엄
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대상</dt>
+                                <dd>
+                                    만 3세 ~ 13세 어린이 및 동반 가족
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>참가비</dt>
+                                <dd>
+                                    10,000원
+                                </dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div class="content04 edu" data-category="children" data-date="20251204" data-recommend="2">
+                    <a href="">
+                        <div class="img-area">
+                            <img src="img/learn02.jpg" alt="">
+                        </div>
+                        <div class="text-area">
+                            <div>
+                                <span>1회성 교육</span>
+                                <span>디뮤지엄</span>
+                                <span>전시연계</span>
+                            </div>
+                            <h2>키즈워크룸 : 컬렉터의 집 (개인)</h2>
+                            <p>
+                                어린이 눈높이에 맞게 취향을 탐색, 발견, 표현하며 컬렉팅의 과정을 흥미롭게 경험하는 어린이 예술 교육 프로그램
+                            </p>
+                            <dl>
+                                <dt>교육진행</dt>
+                                <dd>
+                                    2025.06.28 ~ 2026.02.22
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>
+                                    디뮤지엄 M3 에듀라운지
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정원</dt>
+                                <dd>
+                                    최대 24명
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대상</dt>
+                                <dd>
+                                    6세(만 4세) - 13세
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>참가비</dt>
+                                <dd>
+                                    30,000원
+                                </dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div class="content05 edu" data-category="children" data-date="20251203" data-recommend="3">
+                    <a href="">
+                        <div class="img-area">
+                            <img src="img/learn03.jpg" alt="">
+                        </div>
+                        <div class="text-area">
+                            <div>
+                                <span>단체 교육</span>
+                                <span>디뮤지엄</span>
+                                <span>전시연계</span>
+                            </div>
+                            <h2>키즈워크룸 : 컬렉터의 집 (단체)</h2>
+                            <p>
+                                어린이 눈높이에 맞게 취향을 탐색, 발견, 표현하며 컬렉팅의 과정을 흥미롭게 경험하는 어린이 예술 교육 프로그램
+                            </p>
+                            <dl>
+                                <dt>교육진행</dt>
+                                <dd>
+                                    2025.06.28 ~ 2026.02.22
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>
+                                    디뮤지엄 M3 에듀라운지
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정원</dt>
+                                <dd>
+                                    10-30명
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대상</dt>
+                                <dd>
+                                    10인 이상의 어린이 단체 ( 만 4세-13세)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>참가비</dt>
+                                <dd>
+                                    20,000원
+                                </dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div class="content06 edu" data-category="student" data-date="20251201" data-recommend="5">
+                    <a href="">
+                        <div class="img-area">
+                            <img src="img/learn04.jpg" alt="">
+                        </div>
+                        <div class="text-area">
+                            <div>
+                                <span>단체 교육</span>
+                                <span>디뮤지엄</span>
+                                <span>전시연계</span>
+                            </div>
+                            <h2>틴랩: 미술관 직업 탐험 (미니어처 뮤지엄)</h2>
+                            <p>
+                                미술관 큐레이터는 어떤 일을 할까? 전시는 어떻게 만들어 질까? 모형 그 이상의 경험, 우리 손으로 직접 만들어 보는 미술관!
+                            </p>
+                            <dl>
+                                <dt>교육진행</dt>
+                                <dd>
+                                    2025.06.28 ~ 2026.02.22
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>
+                                    디뮤지엄 M3 에듀라운지
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정원</dt>
+                                <dd>
+                                    10-50명
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대상</dt>
+                                <dd>
+                                    10인 이상의 청소년 단체(12-19세)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>참가비</dt>
+                                <dd>
+                                    10,000원
+                                </dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div class="content07 edu" data-category="student" data-date="20251202" data-recommend="6">
+                    <a href="">
+                        <div class="img-area">
+                            <img src="img/learn05.jpg" alt="">
+                        </div>
+                        <div class="text-area">
+                            <div>
+                                <span>단체 교육</span>
+                                <span>디뮤지엄</span>
+                                <span>전시연계</span>
+                            </div>
+                            <h2>틴랩: 미술관 직업 탐험 (온라인 뮤지엄)</h2>
+                            <p>
+                                미술관 큐레이터는 어떤 일을 할까? 전시는 어떻게 만들어 질까? 무한한 상상, 시공간을 초월하여 실현해 보는 온라인 뮤지엄!
+                            </p>
+                            <dl>
+                                <dt>교육진행</dt>
+                                <dd>
+                                    2025.06.28 ~ 2026.02.22
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>
+                                    디뮤지엄 M3 에듀라운지
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정원</dt>
+                                <dd>
+                                    10-30명
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대상</dt>
+                                <dd>
+                                    10인 이상의 청소년 단체(12세-19세)
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>참가비</dt>
+                                <dd>
+                                    8,000원
+                                </dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div class="content08 edu" data-category="professor" data-date="20251128" data-recommend="5">
+                    <a href="">
+                        <div class="img-area">
+                            <img src="img/learn06.jpg" alt="">
+                        </div>
+                        <div class="text-area">
+                            <div>
+                                <span>단체 교육</span>
+                                <span>디뮤지엄</span>
+                                <span>전시연계</span>
+                            </div>
+                            <h2>스페셜 필드트립</h2>
+                            <p>
+                                취향을 발견하고 영감을 얻고 싶은 단체를 위한 프라이빗 전시 해설
+                            </p>
+                            <dl>
+                                <dt>교육진행</dt>
+                                <dd>
+                                    2025.06.28 ~ 2026.02.22
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>
+                                    디뮤지엄 M3 에듀라운지
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>정원</dt>
+                                <dd>
+                                    10인 이상의 단체
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>대상</dt>
+                                <dd>
+                                    일반 성인 단체
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>참가비</dt>
+                                <dd>
+                                    12,000원
+                                </dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <div class="inner">
+                <button class="btn-more" type="button" onclick="showMore()"><span>더보기</span><i
+                        class="ri-arrow-down-s-line"></i></button>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+                <div class="top">
+                    <ul class="top-ul">
+                        <li class="logo">
+                            DAELIM <br>
+                            CULTURAL <br>
+                            FOUNDATION
+                        </li>
+                        <li class="museum1">
+                            <span class="D">D</span><span>MUSEUM</span>
+                            <p>
+                                서울특별시 성동구 왕십리로 <br>
+                                83-21. 디뮤지엄 <br>
+                                T. 02.6233.7200
+                            </p>
+                        </li>
+                        <li class="museum2">
+                            <span>DAELIM MUSEUM</span>
+                            <p>
+                                서울특별시 종로구 자하문로4길<br> 21, 대림미술관 <br>
+                                T. 02.720.0667 <br>
+                                F. 02.720.0665
+                            </p>
+                        </li>
+                        <li class="space-area">
+                            <img class="space" src="img/space.png">
+                            <div class="text">
+                                <p>구슬모아당구장</p>
+                                <p class="PROJECT">D PROJECT SPACE</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-area">
+                                <a href="#"><img class="insta" src="img/instagram.png" alt=""></a>
+                                <a href="#"><img class="youtube" src="img/youtube.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li><a href="#">채용<img class="share" src="img/share.png" alt=""></a></li>
+                                <li><a href="#">대관·제휴문의</a></li>
+                                <li class="site"><a href="#">SITEMAP</a></li>
+                                <li><a href="#">대림문화재단소개<img class="share" src="img/share.png" alt=""></a></li>
+                                <li><a href="#">문화체육관광부<img class="share" src="img/share.png" alt=""></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <a href=""><strong>개인정보 처리방침</strong></a>
+                        <a href="">이용약관</a>
+                        <a href="">영상정보처리기기 운영·관리방침</a>
+                    </div>
+                    <div>
+                        <span><strong>(재)대림문화재단</strong></span><span>대표자: 이해욱</span>
+                        <span>서울특별시 종로구 자하문로4길 21(통의동 35-1)</span> <span>사업자등록번호: 305-82-09028</span>
+                        <span>통신판매업신고번호: 2020-서울종로-0013</span>
+                        <span>info@daelimmuseum.org</span>
+                    </div>
+                    <div>
+                        © 2022 BY <strong>DAELIM CULTURAL FOUNDATION</strong> ALL RIGHT RESERVED.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
