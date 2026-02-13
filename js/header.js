@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const headerBottom = document.querySelector('.header-bottom');
   const headerChange = document.querySelector('.header-change');
 
-  const menuBtn = document.querySelector('.menuBtn');
+  const menuBtns = document.querySelectorAll('.menuBtn');
   const changeMenuBottom = headerChange.querySelector('.menu-bottom');
   const changeCalendar = headerChange.querySelector('.calender-area');
 
@@ -89,10 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ===============================
      header-change 메뉴 버튼
   =============================== */
+  menuBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      changeMenuBottom.classList.toggle('on');
+      changeCalendar.classList.toggle('on');
+    })
+  })
   menuBtn.addEventListener('click', () => {
-    changeMenuBottom.classList.toggle('on');
-    changeCalendar.classList.toggle('on');
-  });
+  // 모바일은 header-m만 사용
+  if (window.innerWidth <= 1024) return;
+
+  changeMenuBottom.classList.toggle('on');
+  changeCalendar.classList.toggle('on');
+});
 
   /* ===============================
      header-change GNB hover
@@ -126,4 +135,89 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // gnb 영역 벗어나면 닫기
   gnbArea.addEventListener('mouseleave', hideGnb);
+});
+
+/* ===============================
+   모바일 메뉴 슬라이드 제어
+=============================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtns = document.querySelectorAll(
+    '.header-bottom .MenuBtn, .header-change .menuBtn'
+  );
+
+  const headerMArea = document.querySelector('.header-m-area');
+  const headerM = document.querySelector('.header-m');
+  const closeBtn = document.querySelector('.header-m .close');
+
+  function openMenu() {
+  if (window.innerWidth > 1024) return;
+  
+  headerMArea.classList.add('active');
+  document.body.style.overflow = 'hidden'; // ✅ body 스크롤 잠금
+
+  headerM.getBoundingClientRect(); // reflow
+  headerM.style.right = '0';
+}
+
+function closeMenu() {
+  headerM.style.right = '-100%';
+
+  setTimeout(() => {
+    headerMArea.classList.remove('active');
+    document.body.style.overflow = ''; // ✅ body 스크롤 복구
+  }, 350);
+}
+
+  openBtns.forEach(btn => {
+    btn.addEventListener('click', openMenu);
+  });
+
+  closeBtn.addEventListener('click', closeMenu);
+
+  // inline onclick 대응
+  window.showMenu = openMenu;
+  window.closeMenu = closeMenu;
+});
+
+/* ===============================
+   header-m 아코디언 (one open only)
+=============================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const menuItems = document.querySelectorAll(
+    '.header-m .middle > ul > li'
+  );
+
+  menuItems.forEach(item => {
+    const button = item.querySelector('button');
+    const submenu = item.querySelector('ul');
+
+    if (!button || !submenu) return;
+
+    button.addEventListener('click', () => {
+      const isOpen = submenu.classList.contains('open');
+
+      // 🔒 다른 메뉴 전부 닫기
+      menuItems.forEach(otherItem => {
+        const otherSub = otherItem.querySelector('ul');
+        if (!otherSub) return;
+
+        otherSub.style.maxHeight = '0';
+        otherSub.classList.remove('open');
+      });
+
+      // 👉 다시 누른 경우는 닫기만
+      if (isOpen) return;
+
+      // 👉 현재 메뉴 열기
+      submenu.classList.add('open');
+      submenu.style.maxHeight = submenu.scrollHeight + 'px';
+    });
+  });
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1024) {
+    headerM.style.right = '-100%';
+    headerMArea.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 });

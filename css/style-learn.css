@@ -191,6 +191,7 @@ h1 {
 } 
 .edu .inner > div a .img-area {
     max-width: 580px;
+    width: 100%;
 }
 .edu .inner > div a img {
     max-width: 100%;
@@ -219,12 +220,15 @@ h1 {
 .edu .inner > div .text-area dl + dl {
     margin-top: 10px;
 }
+.edu .inner > div .text-area dl dd {
+    color: #999999;
+}
 .edu .inner > div .text-area dl dt {
     width: 80px;
 }
 .edu .inner .edu04 a .img-area {
-    width: 900px;
+    width: 110%;
 }
 .edu .inner .edu05 a .img-area {
-    width: 900px;
+    width: 110%px;
 }

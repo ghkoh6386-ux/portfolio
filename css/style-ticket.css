@@ -104,6 +104,9 @@ h1 {
 .sub-title .sub-text button.on {
     color: #000;
 }
+.sub-title .sub-text .all {
+    color: #999999;
+}
 .sub-title .sub-text strong {
     color: #000;
 }
@@ -223,16 +226,24 @@ h1 {
 .contents .inner > .edu .text-area dl dt {
     width: 80px;
 }
+.contents .inner a .img-area {
+    width: 100%;
+}
+.contents .inner a .img-area img{
+    max-width: 100%;
+}
 .contents .inner .content06 a .img-area {
-    width: 900px;
+    width: 110%;
 }
 .contents .inner .content07 a .img-area {
-    width: 900px;
+    width: 110%;
 }
+.contents .inner 
 /* more btn */
 .more {
     display: none;
     margin-bottom: 150px;
+    margin-top: -70px;
 }
 .more .inner {
     display: flex;
@@ -243,6 +254,8 @@ h1 {
     border: 1px solid #000;
     padding: 18px 50px;
     cursor: pointer;
+    margin-top: -50px;
+    margin-bottom: 150px;
 }
 .more .inner button span {
     display: inline-block;

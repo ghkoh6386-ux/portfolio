@@ -80,7 +80,7 @@ h2 {
 .now-area .now .inner .text-area span {
     display: inline-block;
     background-color: #fff;
-    color: rgba(82, 24, 174, 0.938);
+    color: #000;
     font-size: 18px;
     padding: 8px 15px;
     margin-bottom: 30px;
@@ -97,7 +97,7 @@ h2 {
     display: inline-block;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .now-area .now .inner .text-area .btn {
     font-size: 18px;
@@ -234,7 +234,7 @@ h2 {
     color: #fff;
     font-size: 18px;
     padding: 5px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .contents .inner .content .text-area p {
     font-size: 20px;

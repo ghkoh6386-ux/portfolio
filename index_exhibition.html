@@ -38,6 +38,7 @@
                 <div class="header-bottom">
                     <div class="logo">
                         <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                        <h2>EXHIBITION</h2>
                     </div>
                     <ul class="menu-bottom">
                         <li>
@@ -59,7 +60,12 @@
                             <a href="#">SHOP</a>
                         </li>
                     </ul>
-                    <a href="#"><img class="calendar" src="img/calendar-black.png" alt=""></a>
+                    <a href="#">
+                        <img class="calendar" src="img/calendar-black.png" alt="">
+                    </a>
+                    <button class="menuBtn" type="button" onclick="showMenu()">
+                        <img class="menu" src="img/menu.png" alt="">
+                    </button>
                 </div>
                 <div class="header-change">
                     <div class="logo">
@@ -157,7 +163,7 @@
                     </div>
                 </div>
             </header>
-
+        </div>
         <div class="title-area">
             <div class="inner">
                 <div class="title">
@@ -315,6 +321,165 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="header-m-area">
+        <div class="header-m">
+            <div class="top-area">
+                <div class="top">
+                    <a href="index.html">
+                        <img class="logo" src="img/main-logo-black.png" alt="">
+                    </a>
+                    <button type="button" onclick="closeMenu()">
+                        <img class="close" src="img/close.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li>
+                        <button type="button" onclick="showVisit()">
+                            VISIT
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_visit.html">미술관 소개</a>
+                            </li>
+                            <li>
+                                <a href="#">관람안내</a>
+                            </li>
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showExhibition()">
+                            EXHIBITION
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_exhibition.html">현재 전시</a>
+                            </li>
+                            <li>
+                                <a href="#">지난 전시</a>
+                            </li>
+                            <li>
+                                <a href="#">다음 전시</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showLearn()">
+                            LEARN
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_learn.html">어린이</a>
+                            </li>
+                            <li>
+                                <a href="index_learn.html">청소년</a>
+                            </li>
+                            <li>
+                                <a href="index_learn.html">교사</a>
+                            </li>
+                            <li>
+                                <a href="index_learn.html">전시해설</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showEvent()">
+                            EVENT
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_event.html">프로그램</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showTicket()">
+                            TICKET
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_ticket.html">EXHIBITION</a>
+                            </li>
+                            <li>
+                                <a href="index_ticket.html">LEARN</a>
+                            </li>
+                            <li>
+                                <a href="index_ticket.html">EVENT</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showShop()">
+                            SHOP
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">ALL</a>
+                            </li>
+                            <li>
+                                <a href="#">NEW</a>
+                            </li>
+                            <li>
+                                <a href="#">BEST</a>
+                            </li>
+                            <li>
+                                <a href="#">EXHIBITION</a>
+                            </li>
+                            <li>
+                                <a href="#">EXCLUSIVE</a>
+                            </li>
+                            <li>
+                                <a href="#">LIFESTYLE</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            BECOME A MEMBER
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LOGIN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <div class="icon">
+                    <a href="#">
+                        <img src="img/calendar-white.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/bell.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/ask.png" alt="">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="#">
+                        대림문화재단
+                    </a>
+                    <button type="button" onclick="changeLanguage()">
+                        ENG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

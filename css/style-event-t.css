@@ -1,1 +1,59 @@
 @charset "utf-8";
+
+.inner {
+    padding: 0 50px;
+}
+.title-area {
+    display: none;
+}
+header .header-bottom .logo h2{
+    margin-top: 27px;
+    font-weight: 500;
+}
+.now-area .now .inner .text-area span {
+    font-size: 24px;
+}
+.now-area .now .inner .text-area h1 {
+    font-size: 54px;
+}
+.now-area .now .inner .text-area p {
+    font-size: 22px;
+}
+.now-area .now .inner .text-area strong {
+    font-size: 24px;
+}
+.now-area .now .inner .text-area .btn {
+    font-size: 24px;
+    padding: 20px 100px;
+    border: 1px solid #fff;
+}
+.tab-menu button {
+    font-size: 24px;
+}
+.tab-menu .inner {
+    padding: 0;
+}
+.contents .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.contents .inner .content {
+    height: 100%; width: 100%;
+    border: 1px solid #000;
+    margin-bottom: 80px;
+}
+.contents .inner .content img {
+    width: 100%;
+}
+.contents .inner .content .text-area {
+    padding: 45px 30px;
+}
+.contents .inner .content .text-area span {
+    font-size: 32px;
+}
+.contents .inner .content .text-area p {
+    font-size: 32px;
+    font-weight: 700;
+}

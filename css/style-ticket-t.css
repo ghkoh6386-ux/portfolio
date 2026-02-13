@@ -1,1 +1,107 @@
 @charset "utf-8";
+
+.inner {
+    padding: 0 30px;
+}
+.title-area {
+    display: none;
+}
+.tab-menu .inner {
+    padding: 0;
+}
+.tab-menu button {
+    font-size: 28px;
+}
+.sub-tab-menu {
+    margin-bottom: 80px;
+}
+.sub-tab-menu ul li button {
+    font-size: 28px;
+}
+.sub-title {
+    margin-bottom: -50px;
+}
+.sub-title .sub-text {
+    font-size: 28px;
+}
+.contents .inner {
+    justify-content: center;
+}
+.contents .no-ticket {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.contents .inner > div {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    padding: 0 90px;
+}
+.contents .inner > div a {
+    flex-direction: column;
+    width: 100%;
+}
+.contents .inner > div .img-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contents .inner > div img {
+    max-width: 100%;
+}
+.contents .inner > div .text-area {
+    width: 100%;
+}
+.contents .inner > div .text-area span {
+    font-size: 28px;
+}
+.contents .inner > div .text-area h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+.contents .inner > div .text-area p {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contents .inner > div .text-area .btn-area {
+    position: relative;
+    display: inline-block;
+}
+.contents .inner > div .text-area .btn {
+    font-size: 28px;
+    padding: 30px 100px;
+}
+/* ---edu--- */
+.contents .inner > .edu a .img-area {
+    max-width: 100%;
+}
+.contents .inner > .edu .text-area h2 {
+    font-weight: 700;
+}
+.contents .inner > .edu .text-area p {
+    font-size: 24px;
+}
+.contents .inner > .edu .text-area dl {
+    font-size: 24px;
+}
+.contents .inner > .edu .text-area dl dd {
+    color: #999999;
+}
+.contents .inner .content06 a .img-area {
+    width: 900px;
+}
+.contents .inner .content07 a .img-area {
+    width: 900px;
+}
+/* more btn */
+.more .inner button {
+    font-size: 24px;
+    padding: 20px 59px;
+    cursor: pointer;
+}
+footer {
+    margin-top: 0px;
+}

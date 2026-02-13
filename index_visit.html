@@ -38,6 +38,7 @@
                 <div class="header-bottom">
                     <div class="logo">
                         <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                        <h2>VISIT</h2>
                     </div>
                     <ul class="menu-bottom">
                         <li>
@@ -60,10 +61,14 @@
                         </li>
                     </ul>
                     <a href="#"><img class="calendar" src="img/calendar-black.png" alt=""></a>
+                    <button class="menuBtn" type="button" onclick="showMenu()">
+                        <img class="menu" src="img/menu.png" alt="">
+                    </button>
                 </div>
                 <div class="header-change">
                     <div class="logo">
                         <a href="index.html"><img src="img/main-logo-black.png" alt=""></a>
+                        <h2>VISIT</h2>
                     </div>
                     <ul class="menu-bottom">
                         <li>
@@ -88,7 +93,7 @@
                     <a href="#" class="calender-area">
                         <img class="calendar" src="img/calendar-black.png" alt="">
                     </a>
-                    <button class="menuBtn" type="button" onclick="showMenu">
+                    <button class="menuBtn" type="button" onclick="showMenu()">
                         <img class="menu" src="img/menu.png" alt="">
                     </button>
                 </div>
@@ -181,7 +186,7 @@
                     <div class="title-area">
                         <h1>일상이 예술이 되는 미술관</h1>
                         <p>
-                            대림문화재단이 운영하는 대림미술관, 디뮤지엄, 구슬모아당구장은 우리 일상에서 예술적 가치를 발견하는 전시와 누구나 함께 참여하고 향유할 수 있는 다양한 <br> 교육
+                            대림문화재단이 운영하는 대림미술관, 디뮤지엄, 구슬모아당구장은 우리 일상에서 예술적 가치를 발견하는 전시와 누구나 함께 참여하고 향유할 수 있는 다양한 교육
                             문화
                             프로그램을 통해 관람객들에게 영감과 경험을 선사함으로써 <strong class="str">‘일상이 예술이 되는 미술관’</strong>을 실현하고자 합니다.
                         </p>
@@ -242,9 +247,9 @@
                         </div>
                         <div>
                             <p>
-                                한남동의 폐점한 당구장을 전시공간으로 개조하여 얻은 이름으로 2012년부터 시작한 구슬모아당구장은 설치, 다원예술, 미디어 아트, <br> 사진, 패션, 가구
-                                등 장르 간 경계를 넘나드는 색다른 시도와 전시를 선보이며 새로운 패러다임을 제시해 왔습니다. 급변하는 환경 <br> 속에서도 신선한 형태의 협업을 통해
-                                흥미로운 프로젝트들을 이어가기 위해 다양한 장르에서 활동하고 있는 신진 크리에이터들의 <br>지원을 지속하고 있습니다.
+                                한남동의 폐점한 당구장을 전시공간으로 개조하여 얻은 이름으로 2012년부터 시작한 구슬모아당구장은 설치, 다원예술, 미디어 아트, 사진, 패션, 가구
+                                등 장르 간 경계를 넘나드는 색다른 시도와 전시를 선보이며 새로운 패러다임을 제시해 왔습니다. 급변하는 환경속에서도 신선한 형태의 협업을 통해
+                                흥미로운 프로젝트들을 이어가기 위해 다양한 장르에서 활동하고 있는 신진 크리에이터들의 지원을 지속하고 있습니다.
                             </p>
                         </div>
                     </div>
@@ -271,7 +276,7 @@
                             <li class="museum2">
                                 <span>DAELIM MUSEUM</span>
                                 <p>
-                                    서울특별시 종로구 자하문로4길<br> 21, 대림미술관 <br>
+                                    서울특별시 종로구 자하문로4길<br> 21, 대림미술관 <br> 
                                     T. 02.720.0667 <br>
                                     F. 02.720.0665
                                 </p>
@@ -317,6 +322,164 @@
                 </div>
             </footer>
         </div>
+        <div class="header-m-area">
+        <div class="header-m">
+            <div class="top-area">
+                <div class="top">
+                    <a href="index.html">
+                        <img class="logo" src="img/main-logo-black.png" alt="">
+                    </a>
+                    <button type="button" onclick="closeMenu()">
+                        <img class="close" src="img/close.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li>
+                        <button type="button" onclick="showVisit()">
+                            VISIT
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_visit.html">미술관 소개</a>
+                            </li>
+                            <li>
+                                <a href="#">관람안내</a>
+                            </li>
+                            <li>
+                                <a href="#">오시는 길</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showExhibition()">
+                            EXHIBITION
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_exhibition.html">현재 전시</a>
+                            </li>
+                            <li>
+                                <a href="#">지난 전시</a>
+                            </li>
+                            <li>
+                                <a href="#">다음 전시</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showLearn()">
+                            LEARN
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_learn.html">어린이</a>
+                            </li>
+                            <li>
+                                <a href="index_learn.html">청소년</a>
+                            </li>
+                            <li>
+                                <a href="index_learn.html">교사</a>
+                            </li>
+                            <li>
+                                <a href="index_learn.html">전시해설</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showEvent()">
+                            EVENT
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_event.html">프로그램</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showTicket()">
+                            TICKET
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="index_ticket.html">EXHIBITION</a>
+                            </li>
+                            <li>
+                                <a href="index_ticket.html">LEARN</a>
+                            </li>
+                            <li>
+                                <a href="index_ticket.html">EVENT</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" onclick="showShop()">
+                            SHOP
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="#">HOME</a>
+                            </li>
+                            <li>
+                                <a href="#">ALL</a>
+                            </li>
+                            <li>
+                                <a href="#">NEW</a>
+                            </li>
+                            <li>
+                                <a href="#">BEST</a>
+                            </li>
+                            <li>
+                                <a href="#">EXHIBITION</a>
+                            </li>
+                            <li>
+                                <a href="#">EXCLUSIVE</a>
+                            </li>
+                            <li>
+                                <a href="#">LIFESTYLE</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <a href="#">
+                            BECOME A MEMBER
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LOGIN
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <div class="icon">
+                    <a href="#">
+                        <img src="img/calendar-white.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/bell.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/ask.png" alt="">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="#">
+                        대림문화재단
+                    </a>
+                    <button type="button" onclick="changeLanguage()">
+                        ENG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

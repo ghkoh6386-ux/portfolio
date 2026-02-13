@@ -1,1 +1,36 @@
 @charset "utf-8";
+
+.title-area {
+    display: none;
+}
+.tab-menu .inner {
+    padding: 0;
+}
+.tab-menu button {
+    font-size: 28px;
+}
+.museum .inner > div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+.museum .inner > div {
+    flex-direction: column-reverse;
+    margin-bottom: 170px;
+}
+.museum .inner > div .img-area {
+    text-align: center;
+}
+.museum .inner > div .img-area img {
+    width: 95%;
+}
+.museum .inner > div .text-area {
+    max-width: 59%;
+}
+.museum .inner > div .btn-area a {
+    padding: 30px 90px;
+}
+.museum .inner .img02 {
+    flex-direction: column;
+} 

@@ -1,1 +1,80 @@
 @charset "utf-8";
+
+/* ---section--- */
+section .inner .title-area {
+    margin-bottom: 80px;
+}
+section .inner .title-area h1 {
+    font-size: 55px;
+    font-weight: 700;
+    padding: 0 30px;
+}
+section .inner .title-area p {
+    font-size: 28px;
+    padding: 0 30px;
+}
+section .inner .title-area .str {
+    font-weight: 600;
+    color: #000000ce;
+}
+section .img01 {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+}
+section .img01 .img img {
+    display: inline-block;
+    width: 93%;
+}
+section .img01 .text-area {
+    text-align: left;
+    padding: 0 30px;
+}
+section .img01 p {
+    font-size: 24px;
+} 
+section .img01 .btn-area {
+    text-align: center;
+}
+section .img02 {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+}
+section .img02 .img img {
+    display: inline-block;
+    width: 93%;
+}
+section .img02 .text-area {
+    text-align: left;
+    padding: 0 30px;
+}
+section .img02 p {
+    font-size: 24px;
+}
+section .img02 .btn-area {
+    text-align: center;
+}
+section .img03 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+section .img03 > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px;
+}
+section .img03 .logo {
+    width: 150px;
+    margin-bottom: 40px;
+}
+section .img03 h3 {
+    line-height: 1.8;
+    font-weight: 400;
+}
+section .img03 p {
+    font-size: 24px;
+}

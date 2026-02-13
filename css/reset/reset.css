@@ -30,3 +30,8 @@ body {
     height: 0;
     visibility: hidden;
 }
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,1 +1,45 @@
 @charset "utf-8";
+.inner {
+    padding: 0 50px;
+}
+.title-area {
+    display: none;
+}
+.tab-menu button {
+    font-size: 28px;
+}
+.tab-menu .inner {
+    padding: 0;
+}
+.sub-title {
+    margin-bottom: 100px;
+} 
+.sub-title .sub-text {
+    font-size: 24px;
+}
+.edu .inner > div a {
+    flex-direction: column;
+    width: 100%;
+}
+.edu .inner > div a .img-area {
+    max-width: 100%;
+}
+.edu .inner > div a .img-area img {
+    width: 100%;
+}
+.edu .inner > div a .text-area span {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.edu .inner > div a .text-area h2 {
+    font-size: 44px;
+}
+.edu .inner > div a .text-area p {
+    font-size: 24px;
+}
+.edu .inner > div a .text-area dl {
+    font-size: 24px;
+}
+.edu .inner > div a .text-area dl dt {
+    width: 100px;
+}

@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@charset "utf-8";
-
 *,
 *::before,
 *::after {
@@ -14,6 +12,7 @@
 }
 #wrap {
     width: 100%;
+    overflow: hidden;
 }
 
 /*------- header --------*/
@@ -36,17 +35,35 @@ header .header-bottom {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #d4d4d4;
-    padding: 0 50px;
+    padding: 0 51px;
+    height: 70px;
+}
+header .header-bottom .logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header .header-bottom .logo h2{
+    font-size: 36px;
+    display: none;
 }
 header .header-bottom .logo img {
     width: 50px;
     vertical-align: -3px;
 }
+header .header-bottom .MenuBtn {
+    cursor: pointer;
+    display: none;
+}
+header .header-bottom .menu {
+    width: 30px;
+    margin-left: 20px;
+}
 header .header-bottom .calendar {
     width: 30px;
 }
 header .header-bottom .menu-bottom {
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: center;
 }
@@ -74,6 +91,15 @@ header .header-change {
 }
 header .header-change.active {
     display: flex;
+}
+header .header-change .logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+header .header-change .logo h2{
+    font-size: 36px;
+    display: none;
 }
 header .header-change .logo img {
     width: 50px;
@@ -212,7 +238,7 @@ footer {
     background: #000;
     color: #fff;
     font-size: 14px;
-    height: 490px;
+    height: 100%;
     max-width: 100%;
     padding: 50px 0;
     font-family: "Special Gothic Condensed One", sans-serif;
@@ -238,8 +264,9 @@ footer .top-ul .museum1 span {
     background: #fff;
     color: #000;
     font-weight: 500;
-    padding: 0.5px 3px;
-    margin-right: 2px;
+    font-family: "pretendard";
+    padding: 0.5px 2px;
+    margin-right: 3px;
 }
 footer .top-ul .museum1 p {
     margin-top: 20px;
@@ -250,6 +277,7 @@ footer .top-ul .museum1 p {
 footer .top-ul .museum2 span {
     font-size: 18px;
     font-weight: 600;
+    font-family: "pretendard";
 }
 footer .top-ul .museum2 p {
     margin-top: 20px;
@@ -264,10 +292,6 @@ footer .top ul li .img-area {
 footer .top ul li .img-area .youtube {
     position: absolute;
     top: 2.5px; left: 40px;
-}
-footer .top ul li ul {
-    display: flex;
-    flex-direction: column;
 }
 footer .top ul li ul li {
     line-height: 1.8;
@@ -324,4 +348,270 @@ footer .bottom a:last-child {
 }
 footer .bottom span:last-child {
     border: none;
+}
+/* header-m */
+.header-m-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    pointer-events: none;
+}
+.header-m-area.active {
+    pointer-events: auto;
+}
+.header-m {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: right 0.35s ease;
+    padding-bottom: 170px;
+}
+.header-m .top-area {
+    height: 105px;
+}
+.header-m .top {
+    display: flex;
+    position: fixed;
+    z-index: 102;
+    width: 100%;
+    top: 0;
+    background: #fff;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.header-m .top .logo {
+    width: 60px;
+}
+.header-m .top .close {
+    width: 47px;
+}
+.header-m .middle {
+    padding: 20px 50px;
+    border-bottom: 1px solid #d4d4d4;
+    
+}
+.header-m .middle button {
+    font-size: 44px;
+    font-weight: 600;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    line-height: 2.7;
+}
+.header-m .middle > ul ul {
+    padding-left: 50px; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.header-m .middle > ul ul li {
+    font-size: 44px;
+    line-height: 1.7;
+}
+.header-m .bottom {
+    border-bottom: 1px solid #d4d4d4;
+}
+.header-m .bottom ul {
+    padding: 55px 80px;
+    font-size: 44px;
+    font-weight: 600;
+}
+.header-m .bottom ul li {
+    line-height: 2.5;
+}
+.header-m .menu-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    color: #fff;
+    padding: 50px 50px;
+}
+.header-m .menu-footer .icon img {
+    width: 50px;
+}
+.header-m .menu-footer .icon a + a{
+    margin-left: 20px;
+}
+.header-m .menu-footer .text {
+    text-align: right;
+}
+.header-m .menu-footer .text a{
+    display: block;
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.header-m .menu-footer button {
+    color: #999999;
+    font-size: 20px;
+    width: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+    header .header-top .menu-top{
+    display: none;
+}
+header .header-bottom {
+    border-bottom: none;
+    padding: 0 20px;
+}
+header .header-bottom .logo h2{
+   display: block;
+}
+header .header-bottom .menu-bottom {
+    display: none;
+}
+header .header-bottom .calendar {
+    display: none;
+}
+header .header-bottom .menuBtn {
+    display: block;
+}
+header .header-change .logo h2 {
+    display: block;
+}
+header .header-change {
+    padding: 0 19px;
+}
+header .header-change .menu-bottom.on {
+    display: none;
+}
+header .header-change .calender-area.on {
+    display: none;
+}
+main .inner ul {
+    display: none;
+}
+main .inner h1 {
+    font-size: 50px;
+    padding-left:90px;
+}
+main .inner h1::before {
+    left: -230px;
+}
+.title-area .inner ul {
+    display: none;
+}
+.title-area .inner h1 {
+    font-size: 50px;
+    padding-left:90px;
+}
+.title-area .inner h1::before {
+    left: -230px;
+}
+footer .inner {
+    padding: 0 20px;
+}
+footer img {
+    width: 44px;
+}
+footer .top {
+    border: none;
+}
+footer .inner .top .top-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+footer .inner .top .top-ul .logo {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+footer .inner .top .top-ul .logo br {
+    display: none;
+}
+footer .inner .top .top-ul .museum1 span{
+    font-size: 34px;
+}
+footer .inner .top .top-ul .museum1 p {
+    font-size: 24px;
+    width: 100%;
+    
+}
+footer .inner .top .top-ul .museum1 p br:first-child {
+    display: none;
+}
+footer .inner .top .top-ul .museum2 span {
+    font-size: 34px;
+}
+footer .inner .top .top-ul .museum2 p {
+    width: 100%;
+    font-size: 24px;
+}
+footer .inner .top .top-ul .museum2 p br:first-child {
+    display: none;
+}
+footer .inner .top .top-ul .space-area {
+    height: 100px;
+    margin-bottom: 30px;
+}
+footer .inner .top .top-ul .space-area .space{
+    width: 100px;
+}
+footer .inner .top .top-ul .space-area .text {
+    top: 35px;
+    font-size: 28px;
+    line-height: 1.4;
+}
+footer .inner .top .top-ul .space-area .text .PROJECT {
+    width: 100%;
+    font-size: 20px;
+}
+footer .top ul li .img-area .youtube {
+    top: 15%; left: 120px;
+}
+footer .inner .top .top-ul li:last-child ul{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 2fr 4fr 4fr;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+footer .inner .top .top-ul li:last-child ul li {
+    display: inline-block;
+    font-size: 24px;
+    width: 100%;
+}
+footer .inner .top .top-ul li:last-child ul li .share {
+    width: 24px;
+}
+footer .bottom strong {
+    color: #fff;
+    font-weight: 600;
+}
+footer .bottom a {
+    border: none;
+    margin-right: 10px;
+    padding: 0 0px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+footer .bottom span {
+    border-right: none;
+    display: block;
+    padding: 3px 0px;
+    font-size: 22px;
+}
+footer .bottom span strong {
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+footer .bottom div:nth-child(2) {
+    margin-bottom: 30px;
+}
+footer .bottom div:last-child {
+    font-size: 24px;
+}
 }
