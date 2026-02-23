@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+header .header-bottom .logo img {
+    width: 36px;
+}
+header .header-bottom .menu {
+    width: 25px;
+}
+header .header-change .logo img {
+    width: 36px;
+}
+header .header-change .menu {
+    width: 25px;
+}
+header .header-change {
+    height: 60px;
+}
+.text-area {
+    font-size: 16px;
+    padding: 10px;
+}
+.text-area ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.text-area ul strong {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 700;
+}
+.text-area .clock {
+    width: 18px;
+    margin-right: 2px;
+    vertical-align: -2.8px;
+}
+.text-area ul li:last-child {
+    margin-left: 121px;
+}
+.text-area ul li:last-child strong {
+    margin-left: 20px;
+}
+.slide .what {
+    font-size: 42px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.slide .what::before {
+    left: 290px;
+    top: 16px;
+}
+.slide-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.slide .black {
+    position: static;        
+    width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+}
+.slide .black .text {
+    padding: 60px 30px;
+}
+.slide .black .text .title {
+    font-size: 44px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.slide .black .text .date {
+    width: auto;
+    font-size: 28px;
+}
+.slide .black .text p {
+    font-size: 28px;
+}
+.slide .black .text .btn-area a {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    width: 100%;
+}
+#wrap .sub-image {
+    position: relative;
+    top: 40px; left: 0%;
+    padding-bottom: 60px;
+    width: 100%;
+}
+#wrap .sub-image .swiper-wrapper {
+    justify-content: left;   
+}
+#wrap .sub-image .swiper-slide {
+    width: 70% ;  
+    display: flex;
+    justify-content: center;
+}
+#wrap .sub-image .swiper-slide img{
+    width: 100%;
+}
+#wrap .sub-image .swiper-pagination {
+    position: absolute;
+    bottom: 0px; left: 45px;
+}

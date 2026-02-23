@@ -314,6 +314,7 @@ header .header-change .menu-bottom > li > a {
     color: #fff;
 }
 .slide .black .text span {
+    display: inline-block;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -329,6 +330,7 @@ header .header-change .menu-bottom > li > a {
 .slide .black .text .date {
     font-weight: 800;
     width: 300px;
+    margin-bottom: 10px;
 }
 .slide .black .text p {
     font-size: 18px;
@@ -540,7 +542,6 @@ footer .bottom span:last-child {
 .header-m .middle {
     padding: 20px 50px;
     border-bottom: 1px solid #d4d4d4;
-    
 }
 .header-m .middle button {
     font-size: 44px;

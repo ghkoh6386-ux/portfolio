@@ -119,97 +119,29 @@ h2 {
 }
 .tab-menu ul li {
     text-align: center;
+    position: relative;
+    flex: 0 0 auto;
 }
 .tab-menu ul li button {
     display: inline-block;
-    padding: 20px 20px;
+    padding: 15px 18px;
     color: #999999;
     cursor: pointer;
 }
-.tab-menu ul .all {
-    position: relative;
-}
-.tab-menu ul .all button.on {
+.tab-menu ul li button.on {
     color: #000;
 }
-.tab-menu ul .all button::after {
-    position: absolute;
-    bottom: -1px; left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 2px solid #000;
-    width: 0%; height: 1px;
+.tab-menu ul li button::after {
     content: '';
-}
-.tab-menu ul .all button.active::after {
-  width: 80%;
-}
-.tab-menu ul .art {
-    position: relative;
-}
-.tab-menu ul .art button.on {
-    color: #000;
-}
-.tab-menu ul .art button::after {
     position: absolute;
-    bottom: -1px; left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
     border-bottom: 2px solid #000;
-    width: 0%; height: 1px;
-    content: '';
 }
-.tab-menu ul .art button.active::after {
-  width: 80%;
-}
-.tab-menu ul .museum {
-    position: relative;
-}
-.tab-menu ul .museum button.on {
-    color: #000;
-}
-.tab-menu ul .museum button::after {
-    position: absolute;
-    bottom: -1px; left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 2px solid #000;
-    width: 0%; height: 1px;
-    content: '';
-}
-.tab-menu ul .museum button.active::after {
-  width: 80%;
-}
-.tab-menu ul .space {
-    position: relative;
-}
-.tab-menu ul .space button.on {
-    color: #000;
-}
-.tab-menu ul .space button::after {
-    position: absolute;
-    bottom: -1px; left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 2px solid #000;
-    width: 0%; height: 1px;
-    content: '';
-}
-.tab-menu ul .space button.active::after {
-  width: 90%;
-}
-.tab-menu ul .project {
-    position: relative;
-}
-.tab-menu ul .project button.on {
-    color: #000;
-}
-.tab-menu ul .project button::after {
-    position: absolute;
-    bottom: -1px; left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 2px solid #000;
-    width: 0%; height: 1px;
-    content: '';
-}
-.tab-menu ul .project button.active::after {
-  width: 90%;
+.tab-menu ul li button.active::after {
+    width: 80%;
 }
 /* contents */
 .contents .inner {

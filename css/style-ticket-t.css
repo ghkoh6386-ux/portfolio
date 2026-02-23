@@ -9,8 +9,11 @@
 .tab-menu .inner {
     padding: 0;
 }
-.tab-menu button {
-    font-size: 28px;
+.tab-menu ul li {
+    margin-right: 20px;
+}
+.tab-menu ul li button {
+    padding: 10px;
 }
 .sub-tab-menu {
     margin-bottom: 80px;

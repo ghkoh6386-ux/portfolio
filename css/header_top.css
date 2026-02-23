@@ -167,6 +167,7 @@ header .header-change .menu-bottom > li > a {
     justify-content: center;
     padding: 50px 0px;
     color: #999999;
+    gap: 35px;
 }
 .gnb-area .list-area .list ul {
     padding: 0 22px;
@@ -200,6 +201,7 @@ header .header-change .menu-bottom > li > a {
     justify-content: center;
     padding: 50px 0px;
     color: #999999;
+    gap: 35px;
 }
 .gnb-area .exhibition-area .exhibition-list ul {
     padding: 0 22px;
@@ -481,7 +483,7 @@ header .header-change .logo h2 {
     display: block;
 }
 header .header-change {
-    padding: 0 19px;
+    padding: 34px 19px;
 }
 header .header-change .menu-bottom.on {
     display: none;
@@ -613,5 +615,183 @@ footer .bottom div:nth-child(2) {
 }
 footer .bottom div:last-child {
     font-size: 24px;
+}
+}
+@media screen and (max-width: 430px) {
+header .header-bottom .logo {
+    gap: 15px;
+}
+header .header-bottom .logo img {
+    width: 36px;
+}
+header .header-bottom .logo h2{
+    font-size: 24px;
+}
+header .header-bottom .menu {
+    width: 25px;
+}
+header .header-change .logo {
+    gap: 15px;
+}
+header .header-change .logo img{
+    width: 36px;
+}
+header .header-change .logo h2{
+    font-size: 24px;
+}
+header .header-change .menu {
+    width: 25px;
+}
+header .header-change {
+    height: 60px;
+}
+footer img {
+    width: 30px;
+}
+footer .inner .top .top-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .inner .top .top-ul .logo {
+    font-size: 28px;
+}
+footer .inner .top .top-ul .museum1 span{
+    font-size: 22px;
+}
+footer .inner .top .top-ul .museum1 p {
+    font-size: 14px;
+    margin-top: 10PX;
+}
+footer .inner .top .top-ul .museum2 span {
+    font-size: 22px;
+}
+footer .inner .top .top-ul .museum2 p {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10PX;
+}
+footer .inner .top .top-ul .space-area {
+    height: 70px; width: 100%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+footer .inner .top .top-ul .space-area .space{
+    width: 60px;
+}
+footer .inner .top .top-ul .space-area .text {
+    top: 20px;
+    font-size: 16px;
+}
+footer .inner .top .top-ul .space-area .text .PROJECT {
+    width: 100%;
+    font-size: 18px;
+}
+footer .top ul li .img-area .youtube {
+    top: 15%; left: 70px;
+}
+footer .inner .top .top-ul li:last-child ul{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 2fr 4fr;
+    gap: 8px;
+    margin-top: 30px;
+}
+footer .inner .top .top-ul li:last-child ul li {
+    font-size: 13px;
+}
+footer .inner .top .top-ul li:last-child ul li:last-child {
+    grid-column: span 2;
+}
+footer .inner .top .top-ul li:last-child ul li .share {
+    width: 13px;
+    margin-left: 3px;
+}
+footer .bottom strong {
+    color: #fff;
+    font-weight: 600;
+}
+footer .bottom a {
+    border: none;
+    margin-right: 10px;
+    padding: 0 0px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+footer .bottom span {
+    border-right: none;
+    display: block;
+    padding: 3px 0px;
+    font-size: 14px;
+}
+footer .bottom span strong {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+footer .bottom div:nth-child(2) {
+    margin-bottom: 10px;
+}
+footer .bottom div:last-child {
+    font-size: 16px;
+}
+/* header-m */
+.header-m .top {
+    padding: 10px 20px;
+}
+.header-m .top-area {
+    height: 58px;
+}
+.header-m .top .logo {
+    width: 36px;
+}
+.header-m .top .close {
+    width: 24px;
+}
+.header-m .middle {
+    padding: 25px;
+    border-bottom: 1px solid #d4d4d4;  
+}
+.header-m .middle button {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Special Gothic Condensed One", sans-serif;
+    line-height: 2.7;
+}
+.header-m .middle > ul ul {
+    padding-left: 50px; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+.header-m .middle > ul ul li {
+    font-size: 30px;
+    line-height: 2.5;
+}
+.header-m .bottom {
+    border-bottom: none;
+    height: 60px;
+}
+.header-m .bottom ul {
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.header-m .bottom ul li {
+    line-height: 2.5;
+}
+.header-m .menu-footer {
+    padding: 30px 20px;
+}
+.header-m .menu-footer .icon img {
+    width: 30px;
+}
+.header-m .menu-footer .icon a + a{
+    margin-left: 15px;
+}
+.header-m .menu-footer .text a{
+    font-size: 24px;
+}
+.header-m .menu-footer button {
+    font-size: 14px;
 }
 }

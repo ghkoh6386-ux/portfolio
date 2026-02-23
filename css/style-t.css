@@ -10,6 +10,9 @@ header .header-change {
 .movie-bg {
     aspect-ratio: unset;                  
 }
+.main-area {
+    margin-bottom: 60px;
+}
 /* .img-bg img,
 .movie-bg video,
 .movie-bg img {
@@ -29,7 +32,7 @@ header .header-change {
 /* slide */
 .slide {
     height: auto;
-    margin-bottom: 130px;
+    margin-bottom: 30px;
 }
 .slide .what {
     font-size: 60px;
@@ -37,7 +40,8 @@ header .header-change {
     margin-left: 30px;
 }
 .slide .what::before {
-    display: none; 
+    left: 450px;
+    top: 25px;
 }
 .slide-area {
     position: relative;
@@ -65,6 +69,9 @@ header .header-change {
 .slide .black .text p {
     font-size: 28px;
 }
+.slide .black .text .btn-area {
+    margin-top: 30px;
+}
 .slide .black .text .btn-area a {
     display: block;
     text-align: center;
@@ -74,7 +81,7 @@ header .header-change {
 }
 #wrap .sub-image {
     position: relative;
-    top: 40px; left: 0%;
+    top: -30px; left: 20px;
     padding-bottom: 60px;
     width: 100%;
 }
@@ -91,5 +98,6 @@ header .header-change {
 }
 #wrap .sub-image .swiper-pagination {
     position: absolute;
-    bottom: 0px; left: 45px;
+    bottom: 0px; left: 50%;
+    transform: translateX(-50%);
 }

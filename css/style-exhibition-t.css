@@ -6,16 +6,11 @@
 .tab-menu .inner {
     padding: 0;
 }
-.tab-menu button {
-    font-size: 28px;
-}
 .museum .inner > div {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
-    margin-bottom: 70px;
-}
-.museum .inner > div {
     flex-direction: column-reverse;
     margin-bottom: 170px;
 }
@@ -26,7 +21,7 @@
     width: 95%;
 }
 .museum .inner > div .text-area {
-    max-width: 59%;
+    max-width: 95%;
 }
 .museum .inner > div .btn-area a {
     padding: 30px 90px;
@@ -34,3 +29,7 @@
 .museum .inner .img02 {
     flex-direction: column;
 } 
+.museum .inner .img02 .img-area {
+    text-align: center;
+    margin-right: 0px;
+}

@@ -182,7 +182,7 @@ h1 {
     text-align: right;
 }
 .museum .inner > div .img-area img {
-    width: 88%;
+    width: 100%;
 }
 .museum .inner > div .btn-area a {
     display: inline-block;
@@ -208,8 +208,11 @@ h1 {
     text-align: left;
     margin-right: 60px;
 }
+.museum .inner .img01 .img-area img {
+    width: 84%;
+}
 .museum .inner .img02 .img-area img {
-    width: 120%;
+    width: 100%;
 }
 .museum .inner .img03 .img-area img {
     width: 100%;

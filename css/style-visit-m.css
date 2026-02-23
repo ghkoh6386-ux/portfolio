@@ -1,1 +1,66 @@
 @charset "utf-8";
+
+/* ---section--- */
+main {
+    margin-bottom: 55px;
+}
+main .inner {
+    padding-block: 20px;
+    margin-bottom: 30px;
+}
+main .title h1 {
+    font-size: 40px;
+}
+section .inner .title-area {
+    margin-bottom: 30px;
+}
+section .inner .title-area h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 30px;
+}
+section .inner .title-area p {
+    font-size: 16px;
+    padding: 0 30px;
+}
+section .img01 {
+    margin-bottom: 110px;
+}
+section .img01 h2 {
+    font-size: 26px;
+}
+section .img01 h3 {
+    font-size: 20px;
+}
+section .img01 p {
+    font-size: 16px;
+} 
+section .img02 {
+    margin-bottom: 110px;
+}
+section .img02 h2 {
+    font-size: 26px;
+}
+section .img02 h3 {
+    font-size: 20px;
+}
+section .img02 p {
+    font-size: 16px;
+}
+section .img03 {
+    margin-bottom: 20px;
+}
+section .img03 .logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+section .img03 h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+section .img03 h3 {
+    font-size: 20px;
+}
+section .img03 p {
+    font-size: 16px;
+}

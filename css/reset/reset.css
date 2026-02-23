@@ -10,6 +10,7 @@ table {border-collapse: collapse;} /* 셀간의 간격을 없애는 속성 */
 button {
     border: 0;
     background: none;
+    color: #000;
 }
 h1, h2, h3, h4, strong, b {
     font-weight: 500;

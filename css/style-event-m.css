@@ -1,1 +1,115 @@
 @charset "utf-8";
+
+header .header-bottom .logo h2 {
+    margin-top: 8px;
+    font-weight: 500;
+}
+header .header-change .logo h2 {
+    margin-top: 8px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.inner {
+    padding: 0 15px;
+}
+.tab-menu .inner {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;        
+    -ms-overflow-style: none;
+}
+.tab-menu .inner::-webkit-scrollbar {
+    display: none;
+}
+.tab-menu ul {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    padding-left: 0;             
+    margin-left: 0;    
+    scrollbar-width: none;
+    gap: 0;
+}
+.tab-menu ul li {
+    position: relative;
+    flex: 0 0 auto;           
+}
+.tab-menu ul li button {
+    white-space: nowrap;      
+    padding: 15px 12px;
+    position: relative;
+}
+.now-area {
+    margin-bottom: 40px;
+}
+.now-area .now {
+    background: #6E02D1;
+    color: #fff;
+    height: 320px;
+}
+.now-area .now .inner .text-area {
+    position: absolute;
+    height: 100%;
+    top: 17%;
+}
+.now-area .now .inner .text-area span {
+    font-size: 14px;
+}
+.now-area .now .inner .text-area h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.now-area .now .inner .text-area p {
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+.now-area .now .inner .text-area strong {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.now-area .now .inner .text-area .btn {
+    font-size: 14px;
+    padding: 10px 60px;
+    border: 1px solid #fff;
+}
+.tab-menu {
+    margin-bottom: 40px;
+}
+.tab-menu ul {
+    gap: 0px;
+}
+.tab-menu button {
+    font-size: 80%;
+}
+.contents .inner {
+    gap: 10px;
+}
+.contents .inner .content {
+    margin-bottom: 40px;
+}
+.contents .inner .content img {
+    width: 100%;
+}
+.contents .inner .content .text-area {
+    padding: 13px;
+}
+.contents .inner .content .text-area span {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contents .inner .content .text-area p {
+    font-size: 16px;
+}
+.more .inner {
+    margin-bottom: 60px;
+}
+.more .inner button {
+    font-size: 14px;
+    padding: 10px 40px;
+}
+.more .inner button i {
+    font-size: 18px;
+}
