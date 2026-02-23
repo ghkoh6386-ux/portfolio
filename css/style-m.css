@@ -214,10 +214,10 @@ footer .bottom div:last-child {
     font-weight: 600;
 }
 .header-m .bottom ul li {
-    line-height: 2.3;
+    line-height: 2;
 }
 .header-m .menu-footer {
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 .header-m .menu-footer .icon img {
     width: 30px;
